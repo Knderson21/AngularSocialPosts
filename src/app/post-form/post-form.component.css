@@ -1,0 +1,30 @@
+.formSpacing{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.addButton{
+    width: 100%;
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 50%;
+    background-color: #B1DDEA;
+}
+
+.formItems{
+    width: 50%;
+    margin: auto;
+}
+
+.addPostButton{
+    margin-bottom: 10px;
+}

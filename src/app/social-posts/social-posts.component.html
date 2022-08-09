@@ -1,1 +1,15 @@
-<p>social-posts works!</p>
+<h1>www.creedthoughts.gov.www/creedthoughts</h1>
+<app-post-form (submitted)="AddToPosts($event)"></app-post-form>
+<div class="postContainer">
+  <app-single-post
+    *ngFor="let p of posts"
+    [post]="p"
+    (deleted)="DeletePost($event)"
+  ></app-single-post>
+  <br />
+  <br />
+  <img
+    src="https://external-preview.redd.it/c5sj1Rrm5LaOa-erjy5zZ34-XsPK6z6TdjBOQy8c23I.jpg?auto=webp&s=a941df9d89baa69fd1d354954d2c451c09523103"
+    style="width: 90%; height: 90%"
+  />
+</div>

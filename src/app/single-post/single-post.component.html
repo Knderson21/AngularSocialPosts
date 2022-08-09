@@ -1,1 +1,6 @@
-<p>single-post works!</p>
+<p>{{ post.title }}</p>
+<p>{{ post.thought }}</p>
+<p>{{ post.votes }}</p>
+<button (click)="upvote()">Like</button>
+<button (click)="downvote()">Dislike</button>
+<button (click)="delete()">Delete</button>

@@ -1,1 +1,18 @@
-<p>post-form works!</p>
+<form
+  class="modal"
+  *ngIf="display == true"
+  #PostForm="ngForm"
+  (ngSubmit)="postForm(PostForm)"
+>
+  <div class="formItems">
+    <p>TITLE:</p>
+    <input name="title" ngModel />
+    <p>THOUGHT:</p>
+    <input name="thought" ngModel />
+    <button>Add Post</button>
+  </div>
+</form>
+
+<div class="formSpacing">
+  <button class="addButton" (click)="toggleDisplay()">New Post</button>
+</div>
